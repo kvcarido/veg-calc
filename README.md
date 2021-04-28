@@ -17,7 +17,7 @@ Although I didn't learn anything particularly ground-breaking, building this pro
 - Created a useful tool that I'll utilize over time
 - Helped with following through the philosophy of learning in public
 - Allowed me to be creative with web design
-- Discovered [glitch.com](https://glitch.com), the simplest way to create a web app
+- Discovered [glitch.com](https://glitch.com), an easy way to create a web app
   - _although I ended up switching to a local environment to finish, I love that Glitch removes the boundaries for collaborating and deploying_
 - Practice building out website functionality and DOM manipulation with JavaScript
 
@@ -25,5 +25,6 @@ Although I didn't learn anything particularly ground-breaking, building this pro
 
 - [ ] Add attribution footer
 - [ ] Subtotal calculator – add multiple line items
+- [ ] Fix `user-form` in mobile view
 - [ ] Dropdown menu to select different states
 - [ ] Stores calculated totals in browser
