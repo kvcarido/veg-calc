@@ -23,7 +23,7 @@ Although I didn't learn anything particularly ground-breaking, building this pro
 
 ## Roadmap
 
-- [ ] Add attribution footer\
-- [ ] Subtotal calculator – add multiple line items\
-- [ ] Dropdown menu to select different states\
+- [ ] Add attribution footer
+- [ ] Subtotal calculator – add multiple line items
+- [ ] Dropdown menu to select different states
 - [ ] Stores calculated totals in browser
