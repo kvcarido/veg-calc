@@ -10,7 +10,7 @@ This idea came to me while trying to figure out how much my sister owes me for b
 
 This lightweight util is built from scratch using the simpler things in life – HTML, CSS, and vanilla JavaScript
 
-### Lessons Learned
+## Lessons Learned
 
 Although I didn't learn anything particularly ground-breaking, building this project helped strengthen multiple things:
 
@@ -21,9 +21,9 @@ Although I didn't learn anything particularly ground-breaking, building this pro
   - _although I ended up switching to a local environment to finish, I love that Glitch removes the boundaries for collaborating and deploying_
 - Practice building out website functionality and DOM manipulation with JavaScript
 
-### Roadmap
+## Roadmap
 
-[ ] Add attribution footer\
-[ ] Subtotal calculator – add multiple line items\
-[ ] Dropdown menu to select different states\
-[ ] Stores calculated totals in browser
+- [ ] Add attribution footer\
+- [ ] Subtotal calculator – add multiple line items\
+- [ ] Dropdown menu to select different states\
+- [ ] Stores calculated totals in browser
