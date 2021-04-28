@@ -1,0 +1,182 @@
+:root {
+  /*  colors  */
+  --lightgrey: #f9f9f9;
+  --grey: #a0a0a0;
+  --darkgrey: #373737;
+  --primary: #b4da55;
+  --error: #d60000;
+
+  /*  font family  */
+  --Inconsolata: "Inconsolata", monospace;
+
+  /*  font sizes  */
+  --fs-h1: 1.625rem;
+  --fs-main: 1.125rem;
+  --fs-grand-total: 1.375rem;
+  --fs-caption: 0.875rem;
+
+  /*  padding and sizing  */
+  --spacer: 1rem;
+
+  /*  landing page borders  */
+  --page-border: 0.5rem solid #b4da55;
+}
+
+/****************/
+/* an AOK reset */
+/****************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+fieldset,
+table,
+td,
+tr {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+ol[class],
+ul[class] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--Inconsolata);
+  color: var(--darkgrey);
+  font-size: var(--fs-main);
+  line-height: 1.5;
+}
+
+main {
+  height: 100vh;
+  border-top: var(--page-border);
+  border-bottom: var(--page-border);
+}
+
+/*******************/
+/* utility classes */
+/*******************/
+
+.flow-content > * + * {
+  margin-top: var(--spacer);
+}
+
+.container {
+  padding: 0 var(--spacer);
+  max-width: 35rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+/**********/
+/* layout */
+/**********/
+
+.user-results {
+  max-width: 30rem;
+  margin: 1rem auto 0;
+}
+
+/***********/
+/* styling */
+/***********/
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+label {
+  font-weight: 700;
+}
+
+input {
+  padding: 0.5rem;
+  border-bottom: 1.5px solid #c7c7c7;
+  max-width: 8rem;
+}
+
+button {
+  padding: 0.5rem;
+  border: 1.5px solid;
+  border-radius: 0.5rem;
+}
+
+#submit {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+#reset {
+  color: var(--grey);
+  border-color: var(--grey);
+}
+
+#error {
+  color: var(--error);
+  font-weight: 700;
+  font-size: var(--fs-caption);
+}
+
+.results-table {
+  padding: 0 0.5rem;
+  width: 100%;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: var(--lightgrey);
+}
+
+th,
+td {
+  padding: 0.5rem;
+  border-bottom: 1.5px dashed #c7c7c7;
+}
+
+.grand-total {
+  color: var(--primary);
+  font-size: var(--fs-grand-total);
+  font-weight: 700;
+}

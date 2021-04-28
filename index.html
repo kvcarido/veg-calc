@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Vegetable Calculator</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <main class="flex">
+      <div class="container flow-content">
+        <div class="title flow-content">
+          <h1>🥦 Vegetable Calculator</h1>
+          <p>
+            Taxes are wildin'! Figure out your farmer's market haul hassle-free
+            ✨
+          </p>
+        </div>
+
+        <div class="user-form">
+          <form>
+            <label for="subtotal">Subtotal: </label>
+            <input
+              type="number"
+              name="subtotal"
+              class="subtotal"
+              id="subtotal"
+              placeholder="value"
+            />
+            <button id="submit">Calculate</button>
+            <button id="reset">Reset</button>
+          </form>
+        </div>
+
+        <div class="error-handling">
+          <p id="error"></p>
+        </div>
+
+        <div class="user-results flow-content">
+          <table class="results-table">
+            <tbody>
+              <tr>
+                <th>CA Sales Tax (9.5%)</th>
+                <td id="state-tax">--</td>
+              </tr>
+              <tr>
+                <th>LA City Tax (11.11%)</th>
+                <td id="city-tax">--</td>
+              </tr>
+              <tr>
+                <th>Excise Tax (15%)</th>
+                <td id="excise-tax">--</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="grand-total">
+            Grand Total: <span id="grand-total">--</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
