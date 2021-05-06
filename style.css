@@ -1,5 +1,6 @@
 :root {
   /*  colors  */
+  --white: #ffffff;
   --lightgrey: #f9f9f9;
   --grey: #a0a0a0;
   --darkgrey: #373737;
@@ -17,9 +18,6 @@
 
   /*  padding and sizing  */
   --spacer: 1rem;
-
-  /*  landing page borders  */
-  --page-border: 0.5rem solid #b4da55;
 }
 
 /****************/
@@ -60,6 +58,7 @@ img {
   height: auto;
 }
 
+a,
 button,
 input {
   font-family: inherit;
@@ -78,13 +77,6 @@ body {
   font-family: var(--Inconsolata);
   color: var(--darkgrey);
   font-size: var(--fs-main);
-  line-height: 1.5;
-}
-
-main {
-  height: 100vh;
-  border-top: var(--page-border);
-  border-bottom: var(--page-border);
 }
 
 /*******************/
@@ -104,20 +96,52 @@ main {
 
 .flex {
   display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  min-height: 100vh;
+}
+
+.accent-bg {
+  width: 100%;
+  font-size: var(--fs-caption);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.25rem 0;
 }
 
 /**********/
 /* layout */
 /**********/
 
+.header-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-links li {
+  margin: 0 0.5rem;
+}
+
 .user-results {
   max-width: 30rem;
   margin: 1rem auto 0;
 }
 
+footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration-line: underline;
+}
 /***********/
 /* styling */
 /***********/
@@ -140,6 +164,7 @@ button {
   padding: 0.5rem;
   border: 1.5px solid;
   border-radius: 0.5rem;
+  transition: background-color 300ms;
 }
 
 #submit {
@@ -147,9 +172,21 @@ button {
   border-color: var(--primary);
 }
 
+#submit:hover,
+#submit:focus {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
 #reset {
   color: var(--grey);
   border-color: var(--grey);
+}
+
+#reset:hover,
+#reset:focus {
+  color: var(--white);
+  background-color: var(--grey);
 }
 
 #error {

@@ -23,8 +23,8 @@ Although I didn't learn anything particularly ground-breaking, building this pro
 
 ## Roadmap
 
-- [ ] Add attribution footer
+- [x] Add attribution header + footer
 - [ ] Subtotal calculator – add multiple line items
+- [ ] Add `shipping price` button
 - [ ] Fix `user-form` in mobile view
 - [ ] Dropdown menu to select different states
-- [ ] Stores calculated totals in browser
